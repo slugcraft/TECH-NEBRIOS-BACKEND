@@ -16,3 +16,12 @@ El archivo .env es fundamental para el despliegue de la aplicación, ya que cont
 <br><br>
 >Nota: No distribuyas el .env a ninguna persona externa al proyecto.
 >>Al compartir el archivo .env, queda extrictamente prohibido realizarlo a travéz de medios digitales. Con la finalidad de evitar filtraciones del mismo.
+
+## Despligue local del proyecto
+Para poder desplegar localmente el proyecto puedes hacer uso del siguiente comando: <br><br>
+`pm2 start server.js --watch`
+<br><br>
+Seguidamente ocupa el siguiente comando para poder ver los exits que muestra la consola: <br><br>
+`pm2 logs` <br><br>
+Para parar el funcionamiento del proyecto, ocupa: <br><br>
+`pm2 kill`
