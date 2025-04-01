@@ -7,7 +7,7 @@ En la pantalla principal del repositorio, selecciona el boton "code". A continua
 ## Instalación de los paquetes
 En la terminal de tu equipo, escribe la ruta en la cual se encuentra la carpeta generada del repositorio. A continuación, realiza la instalación de las dependencias a travez del siguiente codigo:<br><br>
 `npm install` <br><br>
-Se deberán de instalar correctamente todas las librerias en el package.json con la version en las que fueron instaladas en un inicio.<br>
+Se deberán de instalar correctamente todas las librerias en el package.json con la version en las que fueron instaladas en un inicio.<br><br>
 **Si se realizan las instalaciones de manera manual e individual de cada libreria, se corre el riesgo de actualizar las dependencias sin haber sido probadas antes, lo que puede causar errores al momento de desplegar.**
 
 ## Obtencion del .env
