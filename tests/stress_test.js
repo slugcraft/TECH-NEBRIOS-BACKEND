@@ -3,9 +3,12 @@ import { sleep, check } from 'k6';
 
 export let options = {
     stages: [
-        { duration: '10s', target: 50 },   // sube a 50 usuarios en 10 segundos
-        { duration: '30s', target: 50 },   // mantiene 50 usuarios por 30 segundos
-        { duration: '10s', target: 0 },    // baja gradualmente
+        { duration: '10s', target: 10 },
+        { duration: '10s', target: 20 },
+        { duration: '10s', target: 30 },
+        { duration: '10s', target: 40 },
+        { duration: '10s', target: 50 },
+        { duration: '5s', target: 50 },
     ],
 };
 
