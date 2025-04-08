@@ -37,4 +37,15 @@ app.listen(port, () => {
 console.log(`Servidor corriendo en http://localhost:${port}`);
 });
   
+app.get('/', (req, res) => {
+    res.status(200);
+});
 
+app.get('/stress_test', (req, res) => {
+    const start = Date.now();
+    // Simulación de carga (puedes simular algo de lógica más pesada si quieres)
+    setTimeout(() => {
+        const duration = Date.now() - start;
+        res.send(`Respuesta en ${duration}ms`);
+    }, Math.random() * 100); // simula pequeñas variaciones de carga
+});
